@@ -1,7 +1,5 @@
 # Armor Extended
 
-# Armor Extended
-
 ## Setup
 This mod is intended for 1.19.2 Fabric. This modification requires fabric-api and owo-lib to be installed.
  
