@@ -3,8 +3,8 @@
   "id": "modid",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Armor Extended (Fabric)",
+  "description": "This mods changes the armor calculating formula to allow higher armor values to be viable!",
   "authors": [
     "Me!"
   ],
