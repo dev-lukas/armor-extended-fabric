@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "armorextended_fabric",
   "version": "${version}",
 
   "name": "Armor Extended (Fabric)",
-  "description": "This mods changes the armor calculating formula to allow higher armor values to be viable!",
+  "description": "Increase the armor cap of minecraft over 20",
   "authors": [
-    "Me!"
+    "Alduin86"
   ],
   "contact": {
     "sources": "https://github.com/dev-lukas/armor-extended-fabric"
   },
 
-  "license": "CC0-1.0",
+  "license": "CC4.0",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",

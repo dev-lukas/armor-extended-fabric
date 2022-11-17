@@ -17,9 +17,18 @@ public class DamageUtilMixin {
     float dr = ArmorExtended.CONFIG.maxDamageReduction();
     float f = 2.0f + armorToughness / 4.0f;
     float g = MathHelper.clamp(armor - damage / f, armor * 0.2f, r);
-    float return_damage = damage * (1.0f - g / (r / dr));
+    float p;
+    if(ArmorExtended.CONFIG.useLogCurve()) {
+        p = (float) Math.log10(1 + 9 * (g / r)) * dr;
+    } else {
+        p = dr * (g / r);
+    }
+
+    float return_damage = damage * (1.0f - p);
     if(ArmorExtended.CONFIG.debugMode()) {
-      ArmorExtended.LOGGER.info("Prevented Damage was: {} %", 100f - 100.0f * (1.0f - g / (r / dr)));
+      ArmorExtended.LOGGER.info("Damage before reduction: {}", damage);
+      ArmorExtended.LOGGER.info("Reduction percentage: {} %", 100.0f * p);
+      ArmorExtended.LOGGER.info("Damage after reduction: {}", return_damage);
     }
 		cir.setReturnValue(return_damage);
   }
