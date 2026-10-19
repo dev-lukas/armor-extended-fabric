@@ -12,7 +12,7 @@
     "sources": "https://github.com/dev-lukas/armor-extended-fabric"
   },
 
-  "license": "CC4.0",
+  "license": "MIT",
   "icon": "assets/armorextended_fabric/icon.png",
 
   "environment": "*",

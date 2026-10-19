@@ -14,3 +14,7 @@ This mod neither increases the vanilla attribute caps on values, nor does it dis
 ## Further Notices
 
 Feel free to add this mod to any modpack. I won´t port this to forge, since forge has alredy plenty alternatives.
+
+## License
+
+[MIT](LICENSE)
